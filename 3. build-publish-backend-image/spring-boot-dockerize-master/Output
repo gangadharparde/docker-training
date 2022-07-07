@@ -1,0 +1,464 @@
+Microsoft Windows [Version 10.0.19044.1766]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\_iGDDrive\_iTraining\Docker Training\spring-boot-dockerize-master>docker build -t gd-spring-boot-docker .
+[+] Building 303.1s (7/7) FINISHED
+ => [internal] load build definition from Dockerfile                                                                                                     0.1s
+ => => transferring dockerfile: 179B                                                                                                                     0.0s
+ => [internal] load .dockerignore                                                                                                                        0.1s
+ => => transferring context: 2B                                                                                                                          0.0s
+ => [internal] load metadata for docker.io/library/openjdk:8                                                                                             9.7s
+ => [internal] load build context                                                                                                                        0.3s
+ => => transferring context: 16.68MB                                                                                                                     0.3s
+ => [1/2] FROM docker.io/library/openjdk:8@sha256:49150b1860da2264a062be2a6db5803468847dbe9f82b6d8be87e70736c1bc7c                                     291.6s
+ => => resolve docker.io/library/openjdk:8@sha256:49150b1860da2264a062be2a6db5803468847dbe9f82b6d8be87e70736c1bc7c                                       0.0s
+ => => sha256:49150b1860da2264a062be2a6db5803468847dbe9f82b6d8be87e70736c1bc7c 1.04kB / 1.04kB                                                           0.0s
+ => => sha256:2a833124671390d372b2d671cedb6e40317f1e52f43005d5d3114a3a0c4a24e8 7.81kB / 7.81kB                                                           0.0s
+ => => sha256:4c78fa1b97999d08408734a61040475ade5bd7e33e91c0d5170dba2c7c7a92fd 5.16MB / 5.16MB                                                          19.0s
+ => => sha256:0ea76c4a55d4b86f4ebaeeb10345e6afcde789279f9bc79bd1504f93a0787d6b 1.79kB / 1.79kB                                                           0.0s
+ => => sha256:1339eaac5b67d16d6d9f41fb7a7b96f7cebf3ba4beab36cbb60935aa772af583 55.01MB / 55.01MB                                                       194.3s
+ => => sha256:14f0d2bd524377dc42d072443c0e5e7cafa14f5df609d39bb1f717f43817a2cd 10.88MB / 10.88MB                                                        39.6s
+ => => sha256:76e5964a957d206950c8c0de99f3c491ecec78887ebe4df0ac5ab9ceb536a4d5 54.58MB / 54.58MB                                                       206.6s
+ => => sha256:fca703eb5d482bd3e512d3962305b75e1f06059c98e9851d0cac1118c5024992 5.42MB / 5.42MB                                                          60.4s
+ => => sha256:3f497af4ef062e775d7deb785424648bb16c61d983fa1c35e237cf768d2bdcfa 209B / 209B                                                              61.6s
+ => => sha256:b40ed17d9c58f39ef428fbf6afc506ded4ac7e7730f391e92d8d535660bc7522 105.94MB / 105.94MB                                                     287.1s
+ => => extracting sha256:1339eaac5b67d16d6d9f41fb7a7b96f7cebf3ba4beab36cbb60935aa772af583                                                                2.6s
+ => => extracting sha256:4c78fa1b97999d08408734a61040475ade5bd7e33e91c0d5170dba2c7c7a92fd                                                                0.2s
+ => => extracting sha256:14f0d2bd524377dc42d072443c0e5e7cafa14f5df609d39bb1f717f43817a2cd                                                                0.4s
+ => => extracting sha256:76e5964a957d206950c8c0de99f3c491ecec78887ebe4df0ac5ab9ceb536a4d5                                                                2.7s
+ => => extracting sha256:fca703eb5d482bd3e512d3962305b75e1f06059c98e9851d0cac1118c5024992                                                                0.2s
+ => => extracting sha256:3f497af4ef062e775d7deb785424648bb16c61d983fa1c35e237cf768d2bdcfa                                                                0.0s
+ => => extracting sha256:b40ed17d9c58f39ef428fbf6afc506ded4ac7e7730f391e92d8d535660bc7522                                                                3.3s
+ => [2/2] ADD target/spring-boot-docker.jar spring-boot-docker.jar                                                                                       1.2s
+ => exporting to image                                                                                                                                   0.2s
+ => => exporting layers                                                                                                                                  0.2s
+ => => writing image sha256:51926e963c710bd15c0470613206b4bf83aa97d4b666222d2a40b5ee3ae13c89                                                             0.0s
+ => => naming to docker.io/library/gd-spring-boot-docker                                                                                                 0.0s
+
+Use 'docker scan' to run Snyk tests against images to find vulnerabilities and learn how to fix them
+
+-----------------------------------------------------------------------------------------
+
+C:\_iGDDrive\_iTraining\Docker Training\spring-boot-dockerize-master>docker image ls
+REPOSITORY                              TAG         IMAGE ID       CREATED         SIZE
+gd-spring-boot-docker                   latest      51926e963c71   3 minutes ago   543MB
+java-hello-world                        latest      bc8e037e7978   2 months ago    835MB
+<none>                                  <none>      4c8309726b10   2 months ago    131MB
+docker101tutorial                       latest      023a83bc973e   2 months ago    28.8MB
+crate                                   latest      146eae73ce56   2 months ago    678MB
+alpine/git                              latest      3356396f045f   2 months ago    38.2MB
+redis                                   latest      a10f849e1540   2 months ago    117MB
+mysql                                   5.7         8aa4b5ffb001   2 months ago    462MB
+amd64/consul                            latest      f5df7112c9dd   2 months ago    131MB
+wordpress                               latest      b44d413c437a   2 months ago    606MB
+mcr.microsoft.com/dotnet/core/samples   aspnetapp   ae74f339e67a   2 months ago    216MB
+sonarqube                               latest      4ca41017fd9b   3 months ago    532MB
+postgres                                9.6         027ccf656dc1   4 months ago    200MB
+hello-world                             latest      feb5d9fea6a5   9 months ago    13.3kB
+redis                                   4.0         191c4017dcdd   2 years ago     89.3MB
+postgres                                10.10       9a05a2b9e69f   2 years ago     211MB
+
+
+
+
+
+C:\Users\GangadharParde>docker run -p 9090:8080 gd-spring-boot-docker
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.2.RELEASE)
+
+2022-07-07 02:26:35.390  INFO 1 --- [           main] com.gd.SpringBootDockerApplication       : Starting SpringBootDockerApplication v0.0.1-SNAPSHOT on 25035c5aee2b with PID 1 (/spring-boot-docker.jar started by root in /)
+2022-07-07 02:26:35.393  INFO 1 --- [           main] com.gd.SpringBootDockerApplication       : No active profile set, falling back to default profiles: default
+2022-07-07 02:26:36.373  INFO 1 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-07-07 02:26:36.400  INFO 1 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-07 02:26:36.400  INFO 1 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.14]
+2022-07-07 02:26:36.412  INFO 1 --- [           main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib]
+2022-07-07 02:26:36.484  INFO 1 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-07 02:26:36.484  INFO 1 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1045 ms
+2022-07-07 02:26:36.702  INFO 1 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-07-07 02:26:36.898  INFO 1 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-07 02:26:36.903  INFO 1 --- [           main] com.gd.SpringBootDockerApplication       : Started SpringBootDockerApplication in 1.818 seconds (JVM running for 2.219)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+==================================================================================================================================================================================================================
+
+
+
+
+
+
+C:\Users\GangadharParde>docker ps -a
+CONTAINER ID   IMAGE                                             COMMAND                  CREATED          STATUS                      PORTS                                                                      NAMES
+bfdfd44ec8a6   gd-spring-boot-docker                             "java -jar /spring-b…"   6 minutes ago    Up 6 minutes                0.0.0.0:9090->8080/tcp                                                     practical_leakey
+35db9a6c5a1f   hello-world                                       "/hello"                 28 minutes ago   Exited (0) 28 minutes ago                                                                              goofy_moser
+b8431819bc03   sonarqube                                         "/opt/sonarqube/bin/…"   8 weeks ago      Exited (1) 8 weeks ago                                                                                 mystifying_chaum
+66b28bc980a5   sonarqube:latest                                  "/opt/sonarqube/bin/…"   8 weeks ago      Created                                                                                                sonarqube
+68a8f28f9630   wordpress:latest                                  "docker-entrypoint.s…"   2 months ago     Up 46 hours                 0.0.0.0:8000->80/tcp                                                       docker-wordpress-mysql-wordpress-1
+39e0ba8dbeb7   mysql:5.7                                         "docker-entrypoint.s…"   2 months ago     Up 46 hours                 33060/tcp, 0.0.0.0:3366->3306/tcp                                          docker-wordpress-mysql-db-1
+31d4d47eef20   mcr.microsoft.com/dotnet/core/samples:aspnetapp   "dotnet aspnetapp.dll"   2 months ago     Exited (255) 8 weeks ago    0.0.0.0:80->80/tcp                                                         docker-compose-webapp-1
+c0a7147bd34a   bc8e037e7978                                      "java HiWorld"           2 months ago     Exited (0) 2 months ago                                                                                competent_carson
+eff173f87adc   amd64/consul                                      "docker-entrypoint.s…"   2 months ago     Exited (255) 2 months ago   8300-8302/tcp, 8301-8302/udp, 8600/tcp, 8600/udp, 0.0.0.0:8500->8500/tcp   interesting_kilby
+14d7d7aaf850   amd64/consul                                      "docker-entrypoint.s…"   2 months ago     Exited (1) 2 months ago                                                                                gracious_haslett
+95f6f2321bb6   docker101tutorial                                 "/docker-entrypoint.…"   2 months ago     Exited (255) 2 months ago   0.0.0.0:50000->80/tcp                                                      docker-tutorial
+12bb4557216e   hello-world                                       "/hello"                 2 months ago     Exited (0) 2 months ago                                                                                gifted_agnesi
+034cac594f56   java-hello-world                                  "java HiWorld"           2 months ago     Exited (0) 2 months ago                                                                                gallant_moser
+5b01d4b530f3   crate                                             "/docker-entrypoint.…"   2 months ago     Exited (78) 2 months ago                                                                               amazing_bardeen
+fe561f5fcbea   redis                                             "docker-entrypoint.s…"   2 months ago     Exited (137) 2 months ago                                                                              upbeat_feynman
+167182eb23af   redis:4.0                                         "docker-entrypoint.s…"   2 months ago     Exited (137) 2 months ago                                                                              modest_chatterjee
+9e21169dc35d   redis                                             "docker-entrypoint.s…"   2 months ago     Exited (0) 2 months ago                                                                                vibrant_turing
+942ff8296a83   hello-world                                       "/hello"                 2 months ago     Exited (0) 2 months ago                                                                                magical_sammet
+86795a47117a   hello-world                                       "/hello"                 2 months ago     Exited (0) 2 months ago                                                                                relaxed_varahamihira
+3cd352f1422e   redis                                             "docker-entrypoint.s…"   2 months ago     Exited (0) 2 months ago                                                                                hardcore_mahavira
+28bbaa5da4d0   amd64/consul                                      "docker-entrypoint.s…"   2 months ago     Exited (255) 2 months ago   8300-8302/tcp, 8301-8302/udp, 8600/tcp, 8600/udp, 0.0.0.0:8500->8500/tcp   consul
+e348069191e2   postgres:9.6                                      "docker-entrypoint.s…"   2 months ago     Exited (1) 2 months ago                                                                                gallant_mendel
+846b21bc7a3c   postgres:9.6                                      "docker-entrypoint.s…"   2 months ago     Exited (1) 2 months ago                                                                                competent_kalam
+6bc6adc449e2   postgres:9.6                                      "docker-entrypoint.s…"   2 months ago     Exited (1) 2 months ago                                                                                stoic_shamir
+94dcecd401d9   postgres:9.6                                      "docker-entrypoint.s…"   2 months ago     Exited (1) 2 months ago                                                                                nice_kowalevski
+b4be78446def   alpine/git                                        "git clone https://g…"   2 months ago     Exited (0) 2 months ago                                                                                repo
+
+C:\Users\GangadharParde>
+
+
+
+
+----------------------------------------
+C:\Users\GangadharParde>docker inspect bfdfd44ec8a6
+[
+    {
+        "Id": "bfdfd44ec8a6f3ef4e6b92b2f16c23e421e83e5ded8b65d018a996344993ff2e",
+        "Created": "2022-07-07T02:14:32.509447334Z",
+        "Path": "java",
+        "Args": [
+            "-jar",
+            "/spring-boot-docker.jar"
+        ],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 1942,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2022-07-07T02:14:33.040954063Z",
+            "FinishedAt": "0001-01-01T00:00:00Z"
+        },
+        "Image": "sha256:51926e963c710bd15c0470613206b4bf83aa97d4b666222d2a40b5ee3ae13c89",
+        "ResolvConfPath": "/var/lib/docker/containers/bfdfd44ec8a6f3ef4e6b92b2f16c23e421e83e5ded8b65d018a996344993ff2e/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/bfdfd44ec8a6f3ef4e6b92b2f16c23e421e83e5ded8b65d018a996344993ff2e/hostname",
+        "HostsPath": "/var/lib/docker/containers/bfdfd44ec8a6f3ef4e6b92b2f16c23e421e83e5ded8b65d018a996344993ff2e/hosts",
+        "LogPath": "/var/lib/docker/containers/bfdfd44ec8a6f3ef4e6b92b2f16c23e421e83e5ded8b65d018a996344993ff2e/bfdfd44ec8a6f3ef4e6b92b2f16c23e421e83e5ded8b65d018a996344993ff2e-json.log",
+        "Name": "/practical_leakey",
+        "RestartCount": 0,
+        "Driver": "overlay2",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": null,
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "default",
+            "PortBindings": {
+                "8080/tcp": [
+                    {
+                        "HostIp": "",
+                        "HostPort": "9090"
+                    }
+                ]
+            },
+            "RestartPolicy": {
+                "Name": "no",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "host",
+            "Dns": [],
+            "DnsOptions": [],
+            "DnsSearch": [],
+            "ExtraHosts": null,
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "ConsoleSize": [
+                40,
+                158
+            ],
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": [],
+            "BlkioDeviceReadBps": null,
+            "BlkioDeviceWriteBps": null,
+            "BlkioDeviceReadIOps": null,
+            "BlkioDeviceWriteIOps": null,
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": [],
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "KernelMemory": 0,
+            "KernelMemoryTCP": 0,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": false,
+            "PidsLimit": null,
+            "Ulimits": null,
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "MaskedPaths": [
+                "/proc/asound",
+                "/proc/acpi",
+                "/proc/kcore",
+                "/proc/keys",
+                "/proc/latency_stats",
+                "/proc/timer_list",
+                "/proc/timer_stats",
+                "/proc/sched_debug",
+                "/proc/scsi",
+                "/sys/firmware"
+            ],
+            "ReadonlyPaths": [
+                "/proc/bus",
+                "/proc/fs",
+                "/proc/irq",
+                "/proc/sys",
+                "/proc/sysrq-trigger"
+            ]
+        },
+        "GraphDriver": {
+            "Data": {
+                "LowerDir": "/var/lib/docker/overlay2/a33f94c82d87deab80f66ebc243b0049c9db012589f57134bbd4596ff5e04b62-init/diff:/var/lib/docker/overlay2/55kt0qibv04peajmoolxpoa7g/diff:/var/lib/docker/overlay2/3d51ee4eb1134f68c7b2342dc413b55b3bf653b31253c715a90812ca928c27b0/diff:/var/lib/docker/overlay2/8146ba3a403209ccaea8f507e2ae1b104f463719d6cd384224c71be560b94b61/diff:/var/lib/docker/overlay2/166cce7c75a40eee6f7d593651028db9c77cbbba54d627a65570404e84a8056e/diff:/var/lib/docker/overlay2/f373f93dc068830b381faa8eda73add18c3d6e1f67ab935aeb064d1ba3f3fe0a/diff:/var/lib/docker/overlay2/38b916b0bced35dbce72a1b6d4e8f3421af36e5fa29ff664dfad6899ecf6b7b6/diff:/var/lib/docker/overlay2/76f705b104d373f4754c57096e3aa48fe18e4414ae4d9918b41ed747eb1e481f/diff:/var/lib/docker/overlay2/c2ea23e7de6b617acfd9aa1a91c2ba1dacae230abc732c6e8f88d90cae1d736a/diff",
+                "MergedDir": "/var/lib/docker/overlay2/a33f94c82d87deab80f66ebc243b0049c9db012589f57134bbd4596ff5e04b62/merged",
+                "UpperDir": "/var/lib/docker/overlay2/a33f94c82d87deab80f66ebc243b0049c9db012589f57134bbd4596ff5e04b62/diff",
+                "WorkDir": "/var/lib/docker/overlay2/a33f94c82d87deab80f66ebc243b0049c9db012589f57134bbd4596ff5e04b62/work"
+            },
+            "Name": "overlay2"
+        },
+        "Mounts": [],
+        "Config": {
+            "Hostname": "bfdfd44ec8a6",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": true,
+            "AttachStderr": true,
+            "ExposedPorts": {
+                "8080/tcp": {}
+            },
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "JAVA_HOME=/usr/local/openjdk-8",
+                "LANG=C.UTF-8",
+                "JAVA_VERSION=8u332"
+            ],
+            "Cmd": null,
+            "Image": "gd-spring-boot-docker",
+            "Volumes": null,
+            "WorkingDir": "",
+            "Entrypoint": [
+                "java",
+                "-jar",
+                "/spring-boot-docker.jar"
+            ],
+            "OnBuild": null,
+            "Labels": {}
+        },
+        "NetworkSettings": {
+            "Bridge": "",
+            "SandboxID": "7ef079bb74f9899c5f11cd9423107e2b2193bf98c76decf30ed6beae75372349",
+            "HairpinMode": false,
+            "LinkLocalIPv6Address": "",
+            "LinkLocalIPv6PrefixLen": 0,
+            "Ports": {
+                "8080/tcp": [
+                    {
+                        "HostIp": "0.0.0.0",
+                        "HostPort": "9090"
+                    }
+                ]
+            },
+            "SandboxKey": "/var/run/docker/netns/7ef079bb74f9",
+            "SecondaryIPAddresses": null,
+            "SecondaryIPv6Addresses": null,
+            "EndpointID": "7d730612433ad542b0af0f6d11cb418393b1afa91b304f7105b26258505de4d2",
+            "Gateway": "172.17.0.1",
+            "GlobalIPv6Address": "",
+            "GlobalIPv6PrefixLen": 0,
+            "IPAddress": "172.17.0.2",
+            "IPPrefixLen": 16,
+            "IPv6Gateway": "",
+            "MacAddress": "02:42:ac:11:00:02",
+            "Networks": {
+                "bridge": {
+                    "IPAMConfig": null,
+                    "Links": null,
+                    "Aliases": null,
+                    "NetworkID": "371343a41740b818b02448f8989e55f53a60ffbfa2aacc7b37c193a25306a94c",
+                    "EndpointID": "7d730612433ad542b0af0f6d11cb418393b1afa91b304f7105b26258505de4d2",
+                    "Gateway": "172.17.0.1",
+                    "IPAddress": "172.17.0.2",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "MacAddress": "02:42:ac:11:00:02",
+                    "DriverOpts": null
+                }
+            }
+        }
+    }
+]
+
+C:\Users\GangadharParde>
+
+
+
+-----------------------------------------------------
+
+C:\Users\GangadharParde>docker inspect bfdfd44ec8a6 | findstr "IPAddress"
+            "SecondaryIPAddresses": null,
+            "IPAddress": "172.17.0.2",
+                    "IPAddress": "172.17.0.2",
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+==================================================
+C:\Users\GangadharParde>docker ps
+CONTAINER ID   IMAGE              COMMAND                  CREATED        STATUS        PORTS                               NAMES
+68a8f28f9630   wordpress:latest   "docker-entrypoint.s…"   2 months ago   Up 46 hours   0.0.0.0:8000->80/tcp                docker-wordpress-mysql-wordpress-1
+39e0ba8dbeb7   mysql:5.7          "docker-entrypoint.s…"   2 months ago   Up 46 hours   33060/tcp, 0.0.0.0:3366->3306/tcp   docker-wordpress-mysql-db-1
+
+C:\Users\GangadharParde>docker stop 68a8f28f9630
+68a8f28f9630
+
+C:\Users\GangadharParde>docker rm -f 68a8f28f9630
+68a8f28f9630
+
+C:\Users\GangadharParde>docker image ls
+REPOSITORY                              TAG         IMAGE ID       CREATED          SIZE
+gd-spring-boot-docker                   latest      51926e963c71   39 minutes ago   543MB
+java-hello-world                        latest      bc8e037e7978   2 months ago     835MB
+<none>                                  <none>      4c8309726b10   2 months ago     131MB
+docker101tutorial                       latest      023a83bc973e   2 months ago     28.8MB
+crate                                   latest      146eae73ce56   2 months ago     678MB
+alpine/git                              latest      3356396f045f   2 months ago     38.2MB
+redis                                   latest      a10f849e1540   2 months ago     117MB
+mysql                                   5.7         8aa4b5ffb001   2 months ago     462MB
+amd64/consul                            latest      f5df7112c9dd   2 months ago     131MB
+wordpress                               latest      b44d413c437a   2 months ago     606MB
+mcr.microsoft.com/dotnet/core/samples   aspnetapp   ae74f339e67a   2 months ago     216MB
+sonarqube                               latest      4ca41017fd9b   3 months ago     532MB
+postgres                                9.6         027ccf656dc1   4 months ago     200MB
+hello-world                             latest      feb5d9fea6a5   9 months ago     13.3kB
+redis                                   4.0         191c4017dcdd   2 years ago      89.3MB
+postgres                                10.10       9a05a2b9e69f   2 years ago      211MB
+
+
+
+
+
+
+
+
+
+
+
+
+
+

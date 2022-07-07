@@ -1,0 +1,36 @@
+Microsoft Windows [Version 10.0.19044.1645]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\_iGDDrive\_iTraining\Docker Training\docker-example>docker build -t java-hello-world .
+[+] Building 1552.0s (11/11) FINISHED
+ => [internal] load build definition from Dockerfile                                                                                                                                                          0.1s
+ => => transferring dockerfile: 681B                                                                                                                                                                          0.0s
+ => [internal] load .dockerignore                                                                                                                                                                             0.1s
+ => => transferring context: 2B                                                                                                                                                                               0.0s
+ => [internal] load metadata for docker.io/library/ubuntu:latest                                                                                                                                              7.3s
+ => [1/7] FROM docker.io/library/ubuntu@sha256:26c68657ccce2cb0a31b330cb0be2b5e108d467f641c62e13ab40cbec258c68d                                                                                               7.1s
+ => => resolve docker.io/library/ubuntu@sha256:26c68657ccce2cb0a31b330cb0be2b5e108d467f641c62e13ab40cbec258c68d                                                                                               0.0s
+ => => sha256:d2e4e1f511320dfb2d0baff2468fcf0526998b73fe10c8890b4684bb7ef8290f 1.46kB / 1.46kB                                                                                                                0.0s
+ => => sha256:125a6e411906fe6b0aaa50fc9d600bf6ff9bb11a8651727ce1ed482dc271c24c 30.42MB / 30.42MB                                                                                                              5.6s
+ => => sha256:26c68657ccce2cb0a31b330cb0be2b5e108d467f641c62e13ab40cbec258c68d 1.42kB / 1.42kB                                                                                                                0.0s
+ => => sha256:aa6c2c047467afc828e77e306041b7fa4a65734fe3449a54aa9c280822b0d87d 529B / 529B                                                                                                                    0.0s
+ => => extracting sha256:125a6e411906fe6b0aaa50fc9d600bf6ff9bb11a8651727ce1ed482dc271c24c                                                                                                                     1.2s
+ => [2/7] RUN apt-get update                                                                                                                                                                                 10.8s
+ => [3/7] RUN apt-get -y dist-upgrade                                                                                                                                                                        14.2s
+ => [4/7] RUN apt-get -y install default-jdk                                                                                                                                                               1506.9s
+ => [5/7] WORKDIR /example                                                                                                                                                                                    0.2s
+ => [6/7] RUN echo 'public class HiWorld{ public static void main(String[] args){System.out.println("Hi world");}}'> HiWorld.java                                                                             0.8s
+ => [7/7] RUN javac HiWorld.java                                                                                                                                                                              1.2s
+ => exporting to image                                                                                                                                                                                        3.4s
+ => => exporting layers                                                                                                                                                                                       3.4s
+ => => writing image sha256:bc8e037e797861a0e84ad4becac40104f103d1faf97791afa79cc7f360ec1e76                                                                                                                  0.0s
+ => => naming to docker.io/library/java-hello-world                                                                                                                                                           0.0s
+
+Use 'docker scan' to run Snyk tests against images to find vulnerabilities and learn how to fix them
+
+C:\_iGDDrive\_iTraining\Docker Training\docker-example>docker run java-hello-world
+Hi world
+
+C:\_iGDDrive\_iTraining\Docker Training\docker-example>
+
+

@@ -1,0 +1,26 @@
+Steps:
+1: Install Docker Desktop
+2: Create account under https://hub.docker.com
+3: Run below commands
+    docker version   //Version of docker clinet and server
+4: Example Install mysql latest version docker image 
+    C:\Users\GangadharParde>docker pull mysql:latest
+    latest: Pulling from library/mysql
+    e54b73e95ef3: Pull complete
+    bb429e544310: Pull complete
+    c148b3f9047c: Pull complete
+    a1dd213a3236: Pull complete
+    297095d1476d: Pull complete
+    87f3aa837301: Pull complete
+    535019436481: Pull complete
+    23722cff1cc3: Pull complete
+    eb19883dc4c6: Pull complete
+    6eaa2c236095: Pull complete
+    Digest: sha256:444f037733d01fc3dfc691a9ab05e346629e8e4d3a6c75da864f21421fb38ced
+    Status: Downloaded newer image for mysql:latest
+    docker.io/library/mysql:latest
+5: Run below commands
+    docker image ls  //list all images on your machine
+    docker rmi <image-name>  //remove docker image
+    docker rm <container-id>  //remove docker container
+    

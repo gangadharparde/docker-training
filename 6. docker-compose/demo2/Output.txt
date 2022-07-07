@@ -1,0 +1,175 @@
+
+C:\_iGDDrive\_iTraining\Docker Training\docker-wordpress-mysql>docker-compose up -d
+[+] Running 2/2
+ - Container docker-wordpress-mysql-db-1         Started                                                                                                                                                      0.6s
+ - Container docker-wordpress-mysql-wordpress-1  Started                                                                                                                                                      1.0s
+
+C:\_iGDDrive\_iTraining\Docker Training\docker-wordpress-mysql>docker ps
+CONTAINER ID   IMAGE              COMMAND                  CREATED          STATUS          PORTS                               NAMES
+d626addf0843   mysql:5.7          "docker-entrypoint.s…"   31 seconds ago   Up 29 seconds   33060/tcp, 0.0.0.0:3366->3306/tcp   docker-wordpress-mysql-db-1
+afb8d589dca8   wordpress:latest   "docker-entrypoint.s…"   8 hours ago      Up 29 seconds   0.0.0.0:8000->80/tcp                docker-wordpress-mysql-wordpress-1
+
+C:\_iGDDrive\_iTraining\Docker Training\docker-wordpress-mysql>docker rm -f d626addf0843
+d626addf0843
+
+C:\_iGDDrive\_iTraining\Docker Training\docker-wordpress-mysql>docker rm -f afb8d589dca8
+afb8d589dca8
+
+C:\_iGDDrive\_iTraining\Docker Training\docker-wordpress-mysql>docker images -a
+REPOSITORY                              TAG         IMAGE ID       CREATED        SIZE
+java-hello-world                        latest      bc8e037e7978   10 hours ago   835MB
+<none>                                  <none>      4c8309726b10   11 hours ago   131MB
+docker101tutorial                       latest      023a83bc973e   15 hours ago   28.8MB
+crate                                   latest      146eae73ce56   16 hours ago   678MB
+alpine/git                              latest      3356396f045f   7 days ago     38.2MB
+redis                                   latest      a10f849e1540   8 days ago     117MB
+mysql                                   5.7         8aa4b5ffb001   8 days ago     462MB
+amd64/consul                            latest      f5df7112c9dd   2 weeks ago    131MB
+wordpress                               latest      b44d413c437a   2 weeks ago    606MB
+mcr.microsoft.com/dotnet/core/samples   aspnetapp   ae74f339e67a   2 weeks ago    216MB
+postgres                                9.6         027ccf656dc1   2 months ago   200MB
+hello-world                             latest      feb5d9fea6a5   7 months ago   13.3kB
+redis                                   4.0         191c4017dcdd   2 years ago    89.3MB
+postgres                                10.10       9a05a2b9e69f   2 years ago    211MB
+
+C:\_iGDDrive\_iTraining\Docker Training\docker-wordpress-mysql>docker image rm mysql
+Error: No such image: mysql
+
+C:\_iGDDrive\_iTraining\Docker Training\docker-wordpress-mysql>docker image rm mysql:5.7
+Untagged: mysql:5.7
+Untagged: mysql@sha256:e767595ba3408fbb2dda493be3594b9a148178df58325fafe8b0363662935624
+Deleted: sha256:8aa4b5ffb001f0092b491bdd8a48a83cb2ab2b721646db139d4cda64dea93600
+Deleted: sha256:3c10adc5e3d6244bf3150fdbd5113dc61c7185066c5429df7f035cff76ea2dc3
+Deleted: sha256:92a595964a3c30430b163e918640a9f2f47037cbab744866fa628d4096427e8a
+Deleted: sha256:d4fb472f4bc83f4c024871ef9ab0e7533995cd25ba6c57d2272095edc894a685
+Deleted: sha256:dc33ff6f21a8069a22f7176d1cc1fb7895af3f219b482c66a83073b9c140c3b6
+Deleted: sha256:625e297c59e84d9cb5ae0dcd69714dcc7f3c823c281cce1616374232057c8fa9
+Deleted: sha256:52994d077831159b79c473125916eb6874cebf38493e3046abe80935e181d8af
+Deleted: sha256:9550bb960b1438abbdc93a0a5518055f4a455bbd65491e53fa795960ddf518a5
+Deleted: sha256:d3dee54c8b55b10f9fe4100dd1fa6e59f98dbfbf84b5757f518d874f57acd1ec
+Deleted: sha256:49ff85d13492ccda474015e5e7101f35e8cee2f4b23d2385195d8a897b4be097
+Deleted: sha256:7310671d54d99fba70b7191bca28f8e9a4b5438c4b012a2ceca11cae17d3177b
+Deleted: sha256:0ad3ddf4a4ce0fc9d65021897541c99e5497a11ced2419016147267df61732d3
+
+C:\_iGDDrive\_iTraining\Docker Training\docker-wordpress-mysql>docker image rm wordpress
+Untagged: wordpress:latest
+Untagged: wordpress@sha256:abc1a527c810542eea7cd0be5c5e8a1d087f16c363a46178ea615e8083700077
+Deleted: sha256:b44d413c437ac566930caea159e8e2e3a6b4ee619f0f92b02a668a9ccb259d0e
+Deleted: sha256:b95042cf5758fc405bcffe8b6288c5407743c04e4a6db35a0c74684c494101ec
+Deleted: sha256:0552af0ad7912d3a1027bf6787cebaf147e2e9fb88a13135ac50c0b6db6040f5
+Deleted: sha256:991a8976ceff6d853b09426394eb5c61e9ce1993895ae1615fd31e411d5fb5e9
+Deleted: sha256:eb4a04d15ece6c2469496496705f20ba7feb37606969e3f5423c3698868ea412
+Deleted: sha256:5b10a94b6dc8fe3082cf13119946d105b3362664f921b716d74691dbcd21a94d
+Deleted: sha256:236d18173c3d68c65ef2199b4e31c49d7e98e9577ba04c6dd8ac24382a48247a
+Deleted: sha256:4a635fa9a00d7955c090d85a5b78a0d050367f32c792b1219417a6a5c94443d1
+Deleted: sha256:61e31bf91875784abf46242c8de9b3b46b5981becb706ce1ba53ad7246e6ed65
+Deleted: sha256:768bd170ccf3ef14b826506f134e05b9dae5dcc1d7f97c7b27600621faf8430d
+Deleted: sha256:1245c5ef7340c77dde8adfa180351669b3c50ec22c8053defd69c6a63fba6bba
+Deleted: sha256:8e0df6674b4ff59b69922a2721f2669c5af94834287accb68b8c5203a4b48384
+Deleted: sha256:b7721f35e550e4ec4eb425fb2f1db91ee3c01aac2095c422d985974826061beb
+Deleted: sha256:bf31c288829a55b5aea7537fc52c75b3584b6579b8161d3b76921e5678a93ee1
+Deleted: sha256:10465e917395c1f57dc7d3b4e0b89d35a21830218274e4c34269652ac4961b11
+Deleted: sha256:34e9c9104d67feae12c119cf7288a54777e52df439224ac8ef3939479c3b4e2c
+Deleted: sha256:0574e4210fc43452535702bcbe53654f71b161e193f4ec260dcc4d06be18c1c5
+Deleted: sha256:8722b9ad1d695c9d4b5082ef055a3b392832a0573e89b94a997189c462d28626
+Deleted: sha256:0e4c8cf874796bb45d6736c4e8b98f43e1bdfbbeaff7fa492b3ec9a725b71591
+Deleted: sha256:d65690d48026296581dba3cd64502d67322e1239742d0edbc3aab3fed440c29b
+Deleted: sha256:5be1657a2ccbb8303908f2ce6d2234c1fede0d42db6138e15d5307f6d233296e
+
+C:\_iGDDrive\_iTraining\Docker Training\docker-wordpress-mysql>docker ps
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+
+C:\_iGDDrive\_iTraining\Docker Training\docker-wordpress-mysql>docker images -a
+REPOSITORY                              TAG         IMAGE ID       CREATED        SIZE
+java-hello-world                        latest      bc8e037e7978   10 hours ago   835MB
+<none>                                  <none>      4c8309726b10   11 hours ago   131MB
+docker101tutorial                       latest      023a83bc973e   15 hours ago   28.8MB
+crate                                   latest      146eae73ce56   16 hours ago   678MB
+alpine/git                              latest      3356396f045f   7 days ago     38.2MB
+redis                                   latest      a10f849e1540   8 days ago     117MB
+amd64/consul                            latest      f5df7112c9dd   2 weeks ago    131MB
+mcr.microsoft.com/dotnet/core/samples   aspnetapp   ae74f339e67a   2 weeks ago    216MB
+postgres                                9.6         027ccf656dc1   2 months ago   200MB
+hello-world                             latest      feb5d9fea6a5   7 months ago   13.3kB
+redis                                   4.0         191c4017dcdd   2 years ago    89.3MB
+postgres                                10.10       9a05a2b9e69f   2 years ago    211MB
+
+C:\_iGDDrive\_iTraining\Docker Training\docker-wordpress-mysql>docker-compose up -d
+[+] Running 34/34
+ - db Pulled                                                                                                                                                                                                709.4s
+   - 4be315f6562f Pull complete                                                                                                                                                                             429.5s
+   - 96e2eb237a1b Pull complete                                                                                                                                                                             429.6s
+   - 8aa3ac85066b Pull complete                                                                                                                                                                             429.9s
+   - ac7e524f6c89 Pull complete                                                                                                                                                                             432.7s
+   - f6a88631064f Pull complete                                                                                                                                                                             432.8s
+   - 15bb3ec3ff50 Pull complete                                                                                                                                                                             463.4s
+   - ae65dc337dcb Pull complete                                                                                                                                                                             463.4s
+   - a4c4c43adf52 Pull complete                                                                                                                                                                             463.5s
+   - c6cab33e8f91 Pull complete                                                                                                                                                                             701.2s
+   - 2e1c4f2c43f6 Pull complete                                                                                                                                                                             701.3s
+   - 2e5ee322af48 Pull complete                                                                                                                                                                             701.4s
+ - wordpress Pulled                                                                                                                                                                                         456.0s
+   - 1fe172e4850f Already exists                                                                                                                                                                              0.0s
+   - 012a3732d045 Pull complete                                                                                                                                                                               1.3s
+   - 43092314d50d Pull complete                                                                                                                                                                             442.4s
+   - 4f615e42d863 Pull complete                                                                                                                                                                             442.5s
+   - cd39010a4efc Pull complete                                                                                                                                                                             443.4s
+   - d983c9ce24de Pull complete                                                                                                                                                                             443.5s
+   - ecbdd59ae430 Pull complete                                                                                                                                                                             443.6s
+   - 9d02b88c8618 Pull complete                                                                                                                                                                             443.7s
+   - 50a246031d43 Pull complete                                                                                                                                                                             443.8s
+   - a6c0267e6c34 Pull complete                                                                                                                                                                             444.5s
+   - 787ca6348cef Pull complete                                                                                                                                                                             444.6s
+   - da8ad43595e2 Pull complete                                                                                                                                                                             444.7s
+   - e191f9e80e29 Pull complete                                                                                                                                                                             444.8s
+   - fed8d3fd90f9 Pull complete                                                                                                                                                                             445.7s
+   - 9ffdaa9000ed Pull complete                                                                                                                                                                             446.4s
+   - 5774aeca6412 Pull complete                                                                                                                                                                             446.5s
+   - 6978431bb9e2 Pull complete                                                                                                                                                                             446.6s
+   - fb4d3fb05351 Pull complete                                                                                                                                                                             446.6s
+   - 23d3af42839e Pull complete                                                                                                                                                                             447.8s
+   - a5b33728e4a6 Pull complete                                                                                                                                                                             447.9s
+   - 766e2b674cd0 Pull complete                                                                                                                                                                             448.0s
+[+] Running 2/2
+ - Container docker-wordpress-mysql-db-1         Started                                                                                                                                                      4.0s
+ - Container docker-wordpress-mysql-wordpress-1  Started                                                                                                                                                      1.3s
+
+C:\_iGDDrive\_iTraining\Docker Training\docker-wordpress-mysql>docker ps
+CONTAINER ID   IMAGE              COMMAND                  CREATED          STATUS          PORTS                               NAMES
+5514e286359b   wordpress:latest   "docker-entrypoint.s…"   12 minutes ago   Up 12 minutes   0.0.0.0:8000->80/tcp                docker-wordpress-mysql-wordpress-1
+6d15fe796a46   mysql:5.7          "docker-entrypoint.s…"   12 minutes ago   Up 12 minutes   33060/tcp, 0.0.0.0:3366->3306/tcp   docker-wordpress-mysql-db-1
+
+C:\_iGDDrive\_iTraining\Docker Training\docker-wordpress-mysql>docker-compose down
+[+] Running 3/3
+ - Container docker-wordpress-mysql-wordpress-1  Removed                                                                                                                                                      1.4s
+ - Container docker-wordpress-mysql-db-1         Removed                                                                                                                                                      3.8s
+ - Network docker-wordpress-mysql_default        Removed                                                                                                                                                      0.3s
+
+C:\_iGDDrive\_iTraining\Docker Training\docker-wordpress-mysql>docker ps
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+
+C:\_iGDDrive\_iTraining\Docker Training\docker-wordpress-mysql>docker images -a
+REPOSITORY                              TAG         IMAGE ID       CREATED        SIZE
+java-hello-world                        latest      bc8e037e7978   10 hours ago   835MB
+<none>                                  <none>      4c8309726b10   12 hours ago   131MB
+docker101tutorial                       latest      023a83bc973e   16 hours ago   28.8MB
+crate                                   latest      146eae73ce56   16 hours ago   678MB
+alpine/git                              latest      3356396f045f   7 days ago     38.2MB
+redis                                   latest      a10f849e1540   8 days ago     117MB
+mysql                                   5.7         8aa4b5ffb001   8 days ago     462MB
+amd64/consul                            latest      f5df7112c9dd   2 weeks ago    131MB
+wordpress                               latest      b44d413c437a   2 weeks ago    606MB
+mcr.microsoft.com/dotnet/core/samples   aspnetapp   ae74f339e67a   2 weeks ago    216MB
+postgres                                9.6         027ccf656dc1   2 months ago   200MB
+hello-world                             latest      feb5d9fea6a5   7 months ago   13.3kB
+redis                                   4.0         191c4017dcdd   2 years ago    89.3MB
+postgres                                10.10       9a05a2b9e69f   2 years ago    211MB
+
+C:\_iGDDrive\_iTraining\Docker Training\docker-wordpress-mysql>
+
+
+
+
+
+
+

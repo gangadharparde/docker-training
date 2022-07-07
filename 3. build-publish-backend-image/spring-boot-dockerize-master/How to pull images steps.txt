@@ -1,0 +1,7 @@
+docker pull grparde/gdhub:gd-spring-boot-docker
+docker image ls
+docker run -d -p 7070:8080 grparde/gdhub:gd-spring-boot-docker
+docker ps
+
+http://localhost:7070/
+Welcome to Docker....!

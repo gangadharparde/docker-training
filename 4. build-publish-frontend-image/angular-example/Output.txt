@@ -1,0 +1,75 @@
+Microsoft Windows [Version 10.0.19044.1766]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\_iGDDrive\_iTraining\Angular Training\1. ng-compponent-inside-component\1. ng-compponent-inside-component>ng build --prod
+Your global Angular CLI version (14.0.3) is greater than your local version (13.3.5). The local Angular CLI version is used.
+
+To disable this warning use "ng config -g cli.warnings.versionMismatch false".
+Option "--prod" is deprecated: No need to use this option as this builder defaults to configuration "production".
+√ Browser application bundle generation complete.
+√ Copying assets complete.
+√ Index html generation complete.
+
+Initial Chunk Files           | Names         |  Raw Size | Estimated Transfer Size
+main.169720fd80509862.js      | main          |  95.05 kB |                28.80 kB
+polyfills.2145acc81d0726ab.js | polyfills     |  33.01 kB |                10.64 kB
+runtime.397c3874548e84cd.js   | runtime       |   1.04 kB |               589 bytes
+styles.ef46db3751d8e999.css   | styles        |   0 bytes |                       -
+
+                              | Initial Total | 129.10 kB |                40.02 kB
+
+Build at: 2022-07-07T04:07:38.522Z - Hash: 75a35686fd05d5b3 - Time: 3519ms
+
+Warning: C:/_iGDDrive/_iTraining/Angular Training/1. ng-compponent-inside-component/1. ng-compponent-inside-component/src/app/app.component.css exceeded maximum budget. Budget 2.00 kB was not met by 1.68 kB with a total of 3.68 kB.
+
+
+C:\_iGDDrive\_iTraining\Angular Training\1. ng-compponent-inside-component\1. ng-compponent-inside-component>docker build -t angular-my-app .
+[+] Building 18.5s (8/8) FINISHED
+ => [internal] load build definition from Dockerfile                                                                                                     0.0s
+ => => transferring dockerfile: 31B                                                                                                                      0.0s
+ => [internal] load .dockerignore                                                                                                                        0.1s
+ => => transferring context: 2B                                                                                                                          0.0s
+ => [internal] load metadata for docker.io/library/nginx:1.17.1-alpine                                                                                   6.6s
+ => [auth] library/nginx:pull token for registry-1.docker.io                                                                                             0.0s
+ => [internal] load build context                                                                                                                        0.1s
+ => => transferring context: 147.13kB                                                                                                                    0.0s
+ => [1/2] FROM docker.io/library/nginx:1.17.1-alpine@sha256:17bd1698318e9c0f9ba2c5ed49f53d690684dab7fe3e8019b855c352528d57be                            11.4s
+ => => resolve docker.io/library/nginx:1.17.1-alpine@sha256:17bd1698318e9c0f9ba2c5ed49f53d690684dab7fe3e8019b855c352528d57be                             0.0s
+ => => sha256:20b62c392073deac500292d6b37c851bb4d00986edb3d73d08c0f0e65019ce6c 739B / 739B                                                               0.0s
+ => => sha256:ea1193fd3dde28b126496fef4df572fafa3c325b85b6105fb6de9e06d8798f21 7.20kB / 7.20kB                                                           0.0s
+ => => sha256:e7c96db7181be991f19a9fb6975cdbbd73c65f4a2681348e63a141a2192a5f10 2.76MB / 2.76MB                                                           6.8s
+ => => sha256:3fb6217217ef7b086ff12ef80db6a61ec86f4af3b65343f23280e2a74697535c 5.71MB / 5.71MB                                                          10.7s
+ => => sha256:17bd1698318e9c0f9ba2c5ed49f53d690684dab7fe3e8019b855c352528d57be 1.41kB / 1.41kB                                                           0.0s
+ => => extracting sha256:e7c96db7181be991f19a9fb6975cdbbd73c65f4a2681348e63a141a2192a5f10                                                                0.1s
+ => => extracting sha256:3fb6217217ef7b086ff12ef80db6a61ec86f4af3b65343f23280e2a74697535c                                                                0.5s
+ => [2/2] COPY /dist/my-app /usr/share/nginx/html                                                                                                        0.2s
+ => exporting to image                                                                                                                                   0.1s
+ => => exporting layers                                                                                                                                  0.1s
+ => => writing image sha256:02cd1edaa6d9b5fa407c0c75d24efdb05c074792043361221ba5c53b6ac3392d                                                             0.0s
+ => => naming to docker.io/library/angular-my-app                                                                                                        0.0s
+
+Use 'docker scan' to run Snyk tests against images to find vulnerabilities and learn how to fix them
+
+C:\Users\GangadharParde>docker run -p 80:80 angular-my-app
+172.17.0.1 - - [07/Jul/2022:04:28:54 +0000] "GET / HTTP/1.1" 200 541 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36" "-"
+172.17.0.1 - - [07/Jul/2022:04:28:54 +0000] "GET /styles.ef46db3751d8e999.css HTTP/1.1" 200 0 "http://localhost/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36" "-"
+172.17.0.1 - - [07/Jul/2022:04:28:54 +0000] "GET /runtime.397c3874548e84cd.js HTTP/1.1" 200 1062 "http://localhost/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36" "-"
+172.17.0.1 - - [07/Jul/2022:04:28:54 +0000] "GET /polyfills.2145acc81d0726ab.js HTTP/1.1" 200 33806 "http://localhost/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36" "-"
+172.17.0.1 - - [07/Jul/2022:04:28:54 +0000] "GET /main.169720fd80509862.js HTTP/1.1" 200 97328 "http://localhost/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36" "-"
+
+C:\Users\GangadharParde>docker ps
+CONTAINER ID   IMAGE            COMMAND                  CREATED          STATUS          PORTS                               NAMES
+4c3d21aaa96b   angular-my-app   "nginx -g 'daemon of…"   58 seconds ago   Up 57 seconds   80/tcp, 0.0.0.0:90->90/tcp          adoring_lamport
+39e0ba8dbeb7   mysql:5.7        "docker-entrypoint.s…"   2 months ago     Up 2 days       33060/tcp, 0.0.0.0:3366->3306/tcp   docker-wordpress-mysql-db-1
+
+C:\Users\GangadharParde>docker stop 4c3d21aaa96b
+4c3d21aaa96b
+
+C:\Users\GangadharParde>docker ps
+CONTAINER ID   IMAGE       COMMAND                  CREATED        STATUS      PORTS                               NAMES
+39e0ba8dbeb7   mysql:5.7   "docker-entrypoint.s…"   2 months ago   Up 2 days   33060/tcp, 0.0.0.0:3366->3306/tcp   docker-wordpress-mysql-db-1
+
+
+
+
+

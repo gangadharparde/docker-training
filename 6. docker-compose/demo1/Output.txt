@@ -1,0 +1,80 @@
+
+C:\_iGDDrive\_iTraining\Docker Training\docker-compose>docker-compose up -d
+[+] Running 1/8
+ - webapp Pulling                                                                                                                                                                                            18.2s
+   - 1fe172e4850f Already exists                                                                                                                                                                              0.0s
+   - bf06eb87a616 Downloading [==================================>                ]  10.47MB/14.97MB                                                                                                          9.6s
+   - b06e47209228 Downloading [================================================>  ]   30.8MB/31.62MB                  [+] Running 4/8                                                                         9.6s
+ - webapp Pulling                                                                                               21.9s
+   - 1fe172e4850f Already exists                                                                                 0.0s
+   - bf06eb87a616 Pull complete                                                                                 11.5s
+   - b06e47209228 Pull complete                                                                                 1[+] Running 4/8
+ - webapp Pulling                                                                                          22.0s1   - 1fe172e4850f Already exists                                                                            0.0s
+   - bf06eb87a616 Pull complete                                                                            11.5s1   - b06e47209228 Pull complete                                                              [+] Running 4/82.6s
+ - webapp Pulling                                                                                22.1s
+   - 1fe172e4850f Already exists                                                                  0.0s
+   - bf06eb87a616 Pull complete                                                                  11.5s
+   - b06e47209228 Pull complete                                                                  12[+] Running 4/8
+ - webapp Pulling                                                                            22.2s2   - 1fe172e4850f Already exists                                                              0.0s
+[+] Running 4/816 Pull complete                                                              11.5s - webapp Pulling                                                                           22.3s6   - 1fe172e4850f Already exists                                                            [+] Running 4/8
+ - webapp Pulling                                                                         22.4s5   - 1fe172e4850f Already exists                                                           0.0s2   - bf06eb87a616 Pull complete                                                           11.[+] Running 4/8
+ - webapp Pulling                                                                        22.5ss   - 1fe172e4850f Already exists                                                          0.0[+] Running 4/8
+ - webapp Pulling                                                                       22.6ss   - 1fe172e4850f Already exists                                      [+] Running 4/8    0.0s6   - bf06eb87a616 Pull complete
+ - webapp Pulling                                                           22.7s
+   - 1fe172e4850f Already exists                                             0.0s
+   - bf06eb87a616 Pull complete                                             11.5s
+[+] Running 4/828 Pull complete
+ - webapp Pulling                                                  22.8s
+   - 1fe172e4850f Already exists                                    0.0s
+   - bf06eb87a616 Pull complete                                    11.5s
+   - b06e47209228 Pull complete                                    12.6s[+] Running 4/8
+ - webapp Pulling                                                 23.3ss   - 1fe172e4850f Already exists                                   0.0s
+[+] Running 4/816 Pull complete                                   11.5 - webapp Pulling                                               23.4s2   - 1fe172e4850f Already exists                          [+] Running 4/8
+ - webapp Pulling                                           23.5s1   - 1fe172e4850f Already exists                             0.0s
+   - bf06eb87a616 Pull complete                             11.5s
+[+] Running 4/828 Pull complete                             12.[+] Running 4/8ng                                        23.6s
+[+] Running 4/8ng                                        23.7s.[+] Running 4/8ng                                        23.8s
+[+] Running 4/8ng                                        23.9s
+[+] Running 4/8ng                                        24.0s.[+] Running 4/8ng                                        24.1s
+[+] Running 4/8ng                                        24.2s
+[+] Running 4/8ng                                        24.3s
+[+] Running 4/8ng                                        24.4s
+[+] Running 4/8ng                                        24.5s
+[+] Running 4/8ng                                        24.6s
+[+] Running 4/8ng                                        24.7s
+[+] Running 4/8ng                                        24.8s
+[+] Running 4/8ng                                        24.9s
+[+] Running 4/8ng                                        25.0s
+[+] Running 4/8ng                                        25.1s
+[+] Running 4/8ng                                        25.2s
+[+] Running 4/8ng                                        25.3s
+[+] Running 4/8ng                                        25.4s
+[+] Running 4/8ng                                        25.5s
+[+] Running 4/8ng                                        25.6s
+[+] Running 4/8ng                                        25.7s
+[+] Running 4/8ng                                        25.8s
+[+] Running 4/8ng                                        25.9s
+[+] Running 4/8ng                                        26.0s
+[+] Running 4/8ng                                        26.1s
+[+] Running 4/8ng                                        26.2s
+[+] Running 4/8ng                                        26.3s
+[+] Running 4/8ng                                        26.4s
+[+] Running 4/8ng                                        26.5s
+[+] Running 4/8ng                                        26.6s
+[+] Running 4/8ng                                        26.7s
+[+] Running 4/8ng                                        26.8s
+[+] Running 4/8ng                                        26.9s>[+] Running 4/8ng                                        27.0s>[+] Running 4/8ng                                        27.1s>[+] Running 4/8ng                                        27.2s>[+] Running 4/8ng                                        27.3s>[+] Running 4/8ng                                        27.4s=[+] Running 4/8ng                                        27.5s=[+] Running 4/8ng                                        27.6s=[+] Running 4/8ng                                        27.7s=[+] Running 4/8ng                                        27.8s=[+] Running 4/8ng                                        27.9s=[+] Running 4/8ng                                        28.0s=[+] Running 4/8ng                                        28.1s=[+] Running 4/8ng                                        28.2s=[+] Running 4/8ng                                        28.3s=[+] Running 4/8ng                                        28.4s=[+] Running 4/8ng                                        28.5s=[+] Running 4/8ng                                        28.6s=[+] Running 4/8ng                                        28.7s=[+] Running 4/8ng                                        28.8s=[+] Running 4/8ng                                        28.9s=[+] Running 4/8ng                                        29.0s=[+] Running 4/8ng                                        29.1s=[+] Running 4/8ng                                        29.2s=[+] Running 4/8ng                                        29.3s=[+] Running 4/8ng                                        29.4s=[+] Running 4/8ng                                        29.5s=[+] Running 4/8ng                                        29.6s=[+] Running 4/8ng                                        29.7s=[+] Running 4/8ng                                        29.8s=[+] Running 4/8ng                                        29.9s=[+] Running 4/8ng                                        30.0s=[+] Running 4/8ng                                        30.1s=[+] Running 4/8ng                                        30.2s=[+] Running 4/8ng                                        30.3s=[+] Running 4/8ng                                        30.4s=[+] Running 4/8ng                                        30.5s=[+] Running 4/8ng                                        30.6s=[+] Running 4/8ng                                        30.7s=[+] Running 4/8ng                                        30.8s=[+] Running 4/8ng                                        30.9s=[+] Running 4/8ng                                        31.0s=[+] Running 4/8ng                                        31.1s=[+] Running 4/8ng                                        31.2s=[+] Running 4/8ng                                        31.3s=[+] Running 4/8ng                                        31.4s=[+] Running 4/8ng                                        31.5s=[+] Running 4/8ng                                        31.6s=[+] Running 4/8ng                                        31.7s=[+] Running 4/8ng                                        31.8s=[+] Running 4/8ng                                        31.9s=[+] Running 4/8ng                                        32.0s=[+] Running 4/8ng                                        32.1s=[+] Running 4/8ng                                        32.2s=[+] Running 4/8ng                                        32.3s=[+] Running 4/8ng                                        32.4s=[+] Running 4/8ng                                        32.5s=[+] Running 4/8ng                                        32.6s=[+] Running 4/8ng                                        32.7s=[+] Running 4/8ng                                        32.8s=[+] Running 4/8ng                                        32.9s=[+] Running 4/8ng                                        33.0s=[+] Running 4/8ng                                        33.1s=[+] Running 4/8ng                                        33.2s=[+] Running 4/8ng                                        33.3s=[+] Running 4/8ng                                        33.4s=[+] Running 4/8ng                                        33.5s=[+] Running 4/8ng                                        33.6s=[+] Running 4/8ng                                        33.7s=[+] Running 4/8ng                                        33.8s=[+] Running 4/8ng                                        33.9s=[+] Running 4/8ng                                        34.0s=[+] Running 4/8ng                                        34.1s=[+] Running 4/8ng                                        34.2s=[+] Running 4/8ng                                        34.3s=[+] Running 4/8ng                                        34.4s=[+] Running 4/8ng                                        34.5s=[+] Running 4/8ng                                        34.6s=[+] Running 4/8ng                                        34.7s=[+] Running 4/8ng                                        34.8s=[+] Running 4/8ng                                        34.9s=[+] Running 4/8ng                                        35.0s=[+] Running 4/8ng                                        35.1s=[+] Running 4/8ng                                        35.2s=[+] Running 4/8ng                                        35.3s=[+] Running 4/8ng                                        35.4s=[+] Running 4/8ng                                        35.5s=[+] Running 4/8ng                                        35.6s=[+] Running 4/8ng                                        35.7s=[+] Running 4/8ng                                        35.8s=[+] Running 4/8ng                                        35.9s=[+] Running 4/8ng                                        36.0s=[+] Running 4/8ng                                        36.1s=[+] Running 4/8ng                                        36.2s=[+] Running 5/8ng                                        36.3s=[+] Running 8/8ng                                        36.4s= - webapp Pulled                                         36.7s
+   - 1fe172e4850f Already exists                          0.0s
+   - bf06eb87a616 Pull complete                          11.5s=   - b06e47209228 Pull complete                          12.6s=   - 4ec24e6222d2 Pull complete                          12.7s
+   - b42fa4ca85ad Pull complete                          27.7s=   - 4f0e94a4fbfe Pull complete                          27.8s
+   - 480a5763b7bf Pull complete                          28.0s
+[+] Running 2/2
+ - Network docker-compose_default     Created             0.0s
+ - Container docker-compose-webapp-1  Started             2.1s
+
+C:\_iGDDrive\_iTraining\Docker Training\docker-compose>docker-compose down
+[+] Running 2/2
+ - Container docker-compose-webapp-1  Removed                                                                                                                                                                 0.5s
+ - Network docker-compose_default     Removed                                                                                                                                                                 0.2s
+
+C:\_iGDDrive\_iTraining\Docker Training\docker-compose>

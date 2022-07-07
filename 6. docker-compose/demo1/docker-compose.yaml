@@ -1,0 +1,7 @@
+version: '3'
+
+services:
+    webapp:
+        image: 'mcr.microsoft.com/dotnet/core/samples:aspnetapp'
+        ports:
+            - '80:80'

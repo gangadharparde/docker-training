@@ -1,0 +1,89 @@
+1. ng build --prod
+
+C:\_iGDDrive\_iTraining\Angular Training\1. ng-compponent-inside-component\1. ng-compponent-inside-componentompponent-inside-component>ng build --prod
+Your global Angular CLI version (14.0.3) is greater than your local version (13.3.5). The local Angular CLI version is used.
+
+To disable this warning use "ng config -g cli.warnings.versionMismatch false".    
+Option "--prod" is deprecated: No need to use this option as this builder defaults to configuration "production".
+✔ Browser application bundle generation complete.
+✔ Copying assets complete.
+✔ Index html generation complete.
+
+Initial Chunk Files           | Names         |  Raw Size | Estimated Transfer Size
+main.169720fd80509862.js      | main          |  95.05 kB |                28.80 kB
+polyfills.2145acc81d0726ab.js | polyfills     |  33.01 kB |                10.64 kB
+runtime.397c3874548e84cd.js   | runtime       |   1.04 kB |               589 bytes
+styles.ef46db3751d8e999.css   | styles        |   0 bytes |                       -
+
+                              | Initial Total | 129.10 kB |                40.02 kB
+
+Build at: 2022-07-07T09:37:55.421Z - Hash: 75a35686fd05d5b3 - Time: 6599ms
+
+Warning: C:/_iGDDrive/_iTraining/Angular Training/1. ng-compponent-inside-component/1. ng-compponent-inside-component/src/app/app.component.css exceeded maximum budget. Budgeent.css exceeded maximum budget. Budget 2.00 kB was not met by 1.68 kB with a total of 3.68 kB.
+
+
+2. check dist folder 
+3. Create at the application folder level file names Dockerfile
+
+FROM nginx:1.17.1-alpine
+COPY /dist/my-app /usr/share/nginx/html
+
+4. docker build -t angular-gd-app .
+
+C:\_iGDDrive\_iTraining\Angular Training\1. ng-compponent-inside-component\1. ng-compponent-inside-component>docker build -t angular-gd-app .
+[+] Building 5.2s (8/8) FINISHED
+ => [internal] load build definition from Dockerfile                                                                               0.1s 
+ => => transferring dockerfile: 102B                                                                                               0.0s 
+ => [internal] load .dockerignore                                                                                                  0.1s 
+ => => transferring context: 2B                                                                                                    0.0s ent.css exceeded maximum budget. Budge
+ => [internal] load metadata for docker.io/library/nginx:1.17.1-alpine                                                             4.9s 
+ => [auth] library/nginx:pull token for registry-1.docker.io                                                                       0.0s 
+ => [internal] load build context                                                                                                  0.1s 
+ => => transferring context: 147.13kB                                                                                              0.0s 
+ => [1/2] FROM docker.io/library/nginx:1.17.1-alpine@sha256:17bd1698318e9c0f9ba2c5ed49f53d690684dab7fe3e8019b855c352528d57be       0.0s 
+ => CACHED [2/2] COPY /dist/my-app /usr/share/nginx/html                                                                           0.0s 
+ => exporting to image                                                                                                             0.0s 
+ => => exporting layers                                                                                                            0.0s 
+ => => writing image sha256:02cd1edaa6d9b5fa407c0c75d24efdb05c074792043361221ba5c53b6ac3392d                                       0.0s 
+ => => naming to docker.io/library/angular-gd-app                                                                                  0.0s 
+
+Use 'docker scan' to run Snyk tests against images to find vulnerabilities and learn how to fix them
+
+5. docker run -d -p 7070:80 angular-gd-app
+6. docker ps
+7. http://localhost:7070/
+8. docker login -u grparde
+9. docker image ls
+10. docker tag 02cd1edaa6d9 grparde/gdhub:angular-gd-app
+11. docker push grparde/gdhub:angular-gd-app
+
+C:\>docker push grparde/gdhub:angular-gd-app
+The push refers to repository [docker.io/grparde/gdhub]
+6eac23abe6f0: Pushed
+fbe0fc9bcf95: Mounted from library/nginx
+f1b5933fe4b5: Mounted from library/nginx
+angular-gd-app: digest: sha256:2a74a9d4273e6d57d13f1ebde0130f7ce0d868699ff27fc608e91f5344e89500 size: 948
+
+
+12. docker pull grparde/gdhub:angular-gd-app
+13. docker run -d -p 7070:80 grparde/gdhub:angular-gd-app
+14. docker ps 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,1 @@
+docker save -o wordpress_latest.tar wordpress:latest
